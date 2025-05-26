@@ -10,10 +10,10 @@ class Product extends Model
 {
     public function brand():BelongsTo
     {
-        return $this->belongsTo(Brand::class);
+        return $this->BelongsTo(Brand::class);
     }
     public function category():BelongsTo 
     {
-        return $this->belongsTo(Category::class);
+        return $this->BelongsTo(Category::class);
     }
 }
